@@ -1,7 +1,7 @@
 {
-  "name": "package-starter",
-  "version": "0.0.0",
-  "description": "Starter",
+  "name": "simple-cache-js",
+  "version": "0.0.1",
+  "description": "Simple cache class with get, set function",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",

@@ -1,5 +1,12 @@
-import { sum } from './index';
+import Cache from './index';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+const cache = new Cache();
+cache.set('testkey', 'testvalue');
+
+test('User can create key', () => {
+    expect(() => cache.set('key', { test: true })).not.toThrow();
+});
+
+test('User can retrieve key', () => {
+    expect(cache.get('testkey')).toBe('testvalue');
 });
